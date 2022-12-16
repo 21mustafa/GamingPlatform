@@ -7,6 +7,14 @@ body {
   margin: 10px 100px;
 }
 
+li {
+  font-size: large;
+}
+
+span {
+  font-size: medium;
+}
+
 i.fa-solid.fa-ghost {
   color: white;
 }
@@ -18,6 +26,12 @@ i.fa-solid.fa-ghost {
 }
 
 .header-text {
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.footer-text {
   color: white;
   font-weight: bold;
   font-size: x-large;
@@ -52,16 +66,31 @@ h1 {
 }
 
 .p-top {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: white;
-  line-height: 1.7rem;
+  line-height: 3rem;
 }
 
 .p-mid {
+  font-size: 1.5rem;
+  color: white;
+  width: 100%;
+  line-height: 2.7rem;
+}
+
+.p-bottom {
   font-size: 1.2rem;
   color: white;
-  width: 35rem;
   line-height: 1.7rem;
+  margin: 0 35%;
+  text-align: center;
+}
+
+.p-footer1 {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.7rem;
+  width: 34%;
 }
 
 .get-button {
@@ -69,8 +98,9 @@ h1 {
   background-color: orange;
   border: none;
   border-radius: 20px;
-  padding: 10px;
-  font-size: x-small;
+  padding: 2rem;
+  font-size: medium;
+  margin-top: 5rem;
 }
 
 .first-section {
@@ -98,6 +128,9 @@ h1 {
 
 h2 {
   color: white;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: x-large;
 }
 
 .game-container {
@@ -109,7 +142,8 @@ h2 {
 
 .fire {
   color: white;
-  padding-top: 20px;
+  padding-top: 3rem;
+  font-size: large;
 }
 
 .game-card {
@@ -130,6 +164,261 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  padding: 6rem;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.icon {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 3rem;
+}
+
+.dark-photo {
+  background-image: url("/assets/Rectangle\ 5.png");
+  background-size: 100%;
+  border-radius: 5px;
+  margin-top: 10rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10rem;
+}
+
+.photo-a {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+
+.footer-cr {
+  color: white;
+}
+
+.footer-c-us {
+  color: white;
+  font-size: large;
+}
+
+.footer-up {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-contactus {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6rem;
+}
+
+.footer-contact {
+  width: 60rem;
+}
+
+.footer-down {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.aboutus-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.aboutus-top-left {
+  font-size: medium;
+  padding-right: 7rem;
+}
+
+.button-aboutus-co {
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.aboutus-p-top {
+  color: white;
+  font-size: small;
+}
+
+.aboutus-co {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2rem;
+  background-color: #615a5a;
+  margin: 0 10rem;
+  padding: 0 7rem;
+  border-radius: 10px;
+}
+
+.about-us-co {
+  display: flex;
+}
+
+.au-main-mid-up {
+  color: white;
+  font-size: 2rem;
+}
+
+.au-main-mid-down {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.au-main-mid {
+  display: flex;
+  margin: 10rem -10rem;
+  padding-top: 10rem;
+  background-color: #06062c;
+}
+
+.au-main-mid-img {
+  padding-left: 20rem;
+}
+
+.au-main-mid-all {
+  padding: 0 22%;
+  line-height: 2.5rem;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  max-width: 15rem;
+  text-align: center;
+}
+
+.our-team {
+  display: flex;
+  justify-content: space-around;
+}
+
+.au-bottom {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.news-top {
+  text-align: center;
+  font-size: medium;
+  padding-bottom: 10rem;
+}
+
+.button-one {
+  background-color: #2351f5;
+  color: white;
+  padding: 2rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  border: none;
+  width: 21%;
+  font-size: medium;
+}
+
+.button-onee {
+  background-color: #2351f5;
+  color: white;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  border: none;
+}
+
+.button-two {
+  background-color: #ff8484;
+  color: white;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  border: none;
+}
+
+.button-three {
+  background-color: #ff7c32;
+  color: white;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  border: none;
+}
+
+.button-four {
+  background-color: #23a54f;
+  color: white;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  border: none;
+}
+
+.button-five {
+  background-color: #9921c3;
+  color: white;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  border: none;
+}
+.news-co {
+  display: flex;
+  max-width: 60rem;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.news-r-l {
+  display: flex;
+}
+
+.news-right {
+  padding-left: 15rem;
+}
+
+.news-left {
+  max-width: 90rem;
+}
+
+.news-details {
+  padding-left: 5rem;
+}
+
+.news-photo {
+  width: 100%;
+}
+
+.news-hr {
+  margin-bottom: 5rem;
+}
+
+#map {
+  width: 100%;
+  height: 100rem;
+  transform: scale(0.89);
+  margin-top: -7rem;
+}
+
+.marker {
+  background-image: url("https://docs.mapbox.com/mapbox-gl-js/assets/pin.svg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.no-padding {
+  padding-bottom: 0;
+}
+
+.hide-overflow {
+  overflow: hidden;
 }
