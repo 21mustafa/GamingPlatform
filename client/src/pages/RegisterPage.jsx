@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export const RegisterPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate()
 
   const registerUser = async (event) => {
     event.preventDefault();
@@ -17,44 +19,46 @@ export const RegisterPage = () => {
         password,
       });
 
-      alert("Registration successful!");
+      alert("Registration successful! Please login.");
+      navigate("/login") 
     } catch (e) {
       alert("Registration failed!");
     }
   };
 
   return (
-    <div className="mt-4 grow flex items-center justify-around">
-      <div className="mb-64">
-        <h1 className="text-4xl text-center mb-4">Register</h1>
-        <form className="max-w-lg mx-auto" onSubmit={registerUser}>
+    <div className="register">
+        <h1 className="register-header">Register</h1>
+        <form className="register-form" onSubmit={registerUser}>
           <input
+            className="register-input"
             type="text"
             placeholder="John Doe"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
+            className="register-input"
             type="email"
             placeholder="your@email.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
+            className="register-input"
             type="password"
             placeholder="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="primary mt-4">Register</button>
-          <div className="text-center py-2 text-gray-500">
+          <button className="register-button">Register</button>
+          <div className="register-link-container">
             Already a member?{" "}
-            <Link className="underline text-black" to="/login">
+            <Link to="/login">
               Login
             </Link>
           </div>
         </form>
-      </div>
     </div>
   );
 };

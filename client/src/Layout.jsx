@@ -4,7 +4,7 @@ import { Header } from "./Header";
 export const Layout = () => {
   
   return (
-    <div className="py-4 px-10 flex flex-col min-h-screen">
+    <div className="layout">
       <Header />
       <Outlet />
 
@@ -12,7 +12,7 @@ export const Layout = () => {
       <div class="footer-up">
         <div class="footer-left">
           <span class="footer-text">GHOST</span>
-          <i class="fa-solid fa-ghost fa-2x"></i>
+          <i class="fa-solid fa-ghost fa-2x logo"></i>
           <p class="p-footer1">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.

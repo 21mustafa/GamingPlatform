@@ -11,7 +11,7 @@ export const Header = () => {
       <Link to={"/"}>
         <div >
           <span class="header-text">GHOST</span>
-          <i class="fa-solid fa-ghost fa-2x"></i>
+          <i class="fa-solid fa-ghost fa-2x logo"></i>
         </div>
       </Link>
 

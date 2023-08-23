@@ -9,7 +9,6 @@ export const LoginPage = () => {
   const [redirect, setRedirect] = useState(false);
 
   const { user,setUser } = useContext(UserContext);
-  console.log(user)
 
   const handleLogin = async (event) => {
     event.preventDefault();
@@ -33,31 +32,31 @@ export const LoginPage = () => {
   }
 
   return (
-    <div className="mt-4 grow flex items-center justify-around">
-      <div className="mb-64">
-        <h1 className="text-4xl text-center mb-4">Login</h1>
-        <form className="max-w-lg mx-auto" onSubmit={handleLogin}>
+    <div className="login">
+        <h1 className="login-header">Login</h1>
+        <form className="login-form" onSubmit={handleLogin}>
           <input
+            className="login-input"
             type="email"
             placeholder="your@email.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
+            className="login-input"
             type="password"
             placeholder="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="primary mt-4">Login</button>
-          <div className="text-center py-2 text-gray-500">
+          <button className="login-button">Login</button>
+          <div className="login-link-container">
             Don't have an account yet?{" "}
-            <Link className="underline text-black" to="/register">
+            <Link className="login-link" to="/register">
               Register now
             </Link>
           </div>
         </form>
-      </div>
     </div>
   );
 };

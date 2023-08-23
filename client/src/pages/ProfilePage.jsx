@@ -20,14 +20,19 @@ export const ProfilePage = () => {
   }
 
   return (
-    <div>
-
-      <div className="text-center max-w-lg mx-auto">
-        Logged in as {user.name} ({user.email})
-        <button className="primary max-w-sm mt-4" onClick={logout}>
-          Logout
-        </button>
+    <div className="profile">
+      <div className="profile-info">
+        <div className="profile-picture">
+          <img src="/assets/avatar.png" alt="profile picture" width={300}/>
+        </div>
+        <div className="profile-text">
+          Hi, {user.name}. Logged in with {user.email}
+        </div>
       </div>
+     
+      <button className="profile-logout-button" onClick={logout}>
+        Logout
+      </button>
     </div>
   );
 };
