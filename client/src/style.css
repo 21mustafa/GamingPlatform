@@ -422,3 +422,16 @@ h2 {
 .hide-overflow {
   overflow: hidden;
 }
+
+.account{
+  display: flex;
+  color: white;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.account-icon {
+  height: 3rem;
+  width: 3rem;
+  padding-right: 0.5rem;
+}
